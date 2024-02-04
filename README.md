@@ -47,7 +47,7 @@ You can customize the bot's behavior by modifying the `config.ts` file. Add or r
 
 ## Security
 
-The bot uses encryption to securely store sensitive information such as the bot token and application ID. These values are encrypted using the `utility.ts` module and stored in the `dist/Settings.json` file.
+The bot uses encryption to securely store sensitive information such as the bot token and application ID. These values are encrypted using the `utility.ts` module and stored in the `dist/data.json` file.
 
 ## Contributing
 

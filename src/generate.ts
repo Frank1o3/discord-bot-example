@@ -26,7 +26,7 @@ async function askQuestions() {
     };
     try {
         console.log("Making Encrypted Json file");
-        writeFileSync('dist/Settings.json', JSON.stringify(data, null, 2));
+        writeFileSync('dist/data.json', JSON.stringify(data, null, 2));
         console.log('JSON file has been saved.');
     } catch (error) {
         console.error('Error writing JSON file:', error);
