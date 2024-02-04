@@ -1,6 +1,11 @@
 # Ignore node_modules directory
 node_modules
+
+# Ignore some .js files
 main.js
 utility.js
 generate.js
+
+# Ignore some .json files
 data.json
+package-lock.json
