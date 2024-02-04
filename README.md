@@ -15,9 +15,12 @@ The bot is structured around several core files:
 
 This repository includes custom npm scripts for various tasks:
 
-- `npm run Run`: Starts the bot by executing the `Run.sh` script, which compiles the TypeScript files and runs the bot.
-- `npm run Build`: Compiles the TypeScript source files into JavaScript using the TypeScript compiler (`tsc`).
-- `npm run Generate`: Executes the `generate.ts` script to create encrypted configuration files.
+- `npm run Build`: Compiles the TypeScript source files into JavaScript using the TypeScript compiler (`tsc`). This step is necessary to prepare the bot for execution by translating the TypeScript (`main.ts`) into JavaScript (`main.js`).
+- `npm run Run <mode>`: Starts the bot by executing the `Run.sh` script. The script accepts a single argument to determine the execution mode:
+  - If the argument is `0`, it runs the compiled `main.js` using Node.js.
+  - If the argument is `1`, it runs the compiled `main.js` using Nodemon for development, allowing for automatic restarts upon file changes.
+
+- `npm run Generate`: Executes the `generate.ts` script to create encrypted configuration files. You will be prompted to enter your Discord bot token and application ID during this process.
 
 ## Getting Started
 
@@ -26,8 +29,8 @@ To get started with this bot, follow these steps:
 1. Clone the repository to your local machine.
 2. Install the necessary dependencies by running `npm install`.
 3. Generate the encrypted configuration files by running `npm run Generate`. You will be prompted to enter your Discord bot token and application ID.
-4. Build the TypeScript files by running `npm run Build`.
-5. Start the bot by running `npm run Run`.
+4. Build the TypeScript files by running `npm run Build`. This compiles the TypeScript code into JavaScript, producing a `main.js` file.
+5. Start the bot by running `npm run Run 0` for a standard execution or `npm run Run 1` for development mode with Nodemon.
 
 ## Usage
 
