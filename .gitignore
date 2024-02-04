@@ -1,2 +1,6 @@
 # Ignore node_modules directory
 node_modules\
+main.js
+utility.js
+generate.js
+data.json
