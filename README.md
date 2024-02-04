@@ -52,4 +52,4 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ## License
 
-This project is licensed under the ISC License. See the `LICENSE` file for details.
+This project is licensed under the GNU License. See the `LICENSE` file for details.
