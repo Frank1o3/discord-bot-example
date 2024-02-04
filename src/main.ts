@@ -9,7 +9,7 @@ interface Data {
     AppID: [string, string];
 }
 
-const data: Data = JSON.parse(readFileSync("dist/Settings.json").toString());
+const data: Data = JSON.parse(readFileSync("dist/data.json").toString());
 const Key = numberToKey(data.KeyNum);
 const Token = decrypt({ iv: data.Token[0], encryptedData: data.Token[1] }, Key);
 const AppID = decrypt({ iv: data.AppID[0], encryptedData: data.AppID[1] }, Key);
