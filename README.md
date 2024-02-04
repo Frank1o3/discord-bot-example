@@ -1,6 +1,6 @@
 # Bot v1 - Simple Discord Bot Example in TypeScript
 
-Welcome to Bot v1, a simple example of creating a Discord bot using TypeScript and the discord.js library. This repository demonstrates the basic structure and functionality of a Discord bot, including command handling, encryption, and utility functions.
+Welcome this a simple example of creating a Discord bot using TypeScript and the discord.js library. This repository demonstrates the basic structure and functionality of a Discord bot, including command handling, encryption, and utility functions.
 
 ## Overview
 
