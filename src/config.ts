@@ -1,19 +1,30 @@
-import { GatewayIntentBits } from 'discord.js';
+import {
+    GatewayIntentBits,
+    SlashCommandBuilder,
+    SlashCommandUserOption,
+} from "discord.js";
 
 export const intents = [
     GatewayIntentBits.GuildIntegrations,
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.DirectMessages,
-    GatewayIntentBits.Guilds
+    GatewayIntentBits.Guilds,
 ];
+
+const command = new SlashCommandBuilder();
+command.setName("ping");
 
 export const Commands = [
     {
-        name: 'ping',
-        description: 'Replies with Pong!'
+        data: new SlashCommandBuilder()
+            .setName("ping")
+            .setDescription("Replies with Pong!")
+            .setDMPermission(true),
     },
     {
-        name: 'status',
-        description: 'Bot Status',
+        data: new SlashCommandBuilder()
+            .setName("status")
+            .setDescription("Replies with Pong!")
+            .setDMPermission(true),
     },
-]
+];
