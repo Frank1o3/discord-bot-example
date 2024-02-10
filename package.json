@@ -1,32 +1,33 @@
 {
-  "name": "bot-v1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "Run": "bash ./Run.sh",
-    "Build": "tsc --pretty",
-    "Generate": "node dist/generate.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Frank1o3/discord-bot-example.git"
-  },
-  "author": "Frank1o3",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Frank1o3/discord-bot-example/issues"
-  },
-  "homepage": "https://github.com/Frank1o3/discord-bot-example#readme",
-  "devDependencies": {
-    "@types/node": "^20.11.16",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.21.1"
-  },
-  "dependencies": {
-    "discord.js": "^14.14.1",
-    "nodemon": "^3.0.3"
-  }
+    "name": "bot-v1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "Run": "bash ./Run.sh",
+        "Build": "tsc --pretty",
+        "Generate": "node dist/generate.js",
+        "watch": "tsc --watch --pretty"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Frank1o3/discord-bot-example.git"
+    },
+    "author": "Frank1o3",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Frank1o3/discord-bot-example/issues"
+    },
+    "homepage": "https://github.com/Frank1o3/discord-bot-example#readme",
+    "devDependencies": {
+        "@types/node": "^20.11.16",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "eslint": "^8.56.0",
+        "eslint-plugin-vue": "^9.21.1"
+    },
+    "dependencies": {
+        "discord.js": "^14.14.1",
+        "nodemon": "^3.0.3"
+    }
 }
