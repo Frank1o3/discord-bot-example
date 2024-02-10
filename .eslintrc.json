@@ -15,7 +15,7 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "vue"
+        "vue.js"
     ],
     "rules": {
     }
