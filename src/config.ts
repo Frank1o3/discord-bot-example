@@ -19,12 +19,12 @@ export const Commands = [
         data: new SlashCommandBuilder()
             .setName("ping")
             .setDescription("Replies with Pong!")
-            .setDMPermission(true)
+            .setDMPermission(true),
     },
     {
         data: new SlashCommandBuilder()
             .setName("status")
             .setDescription("Replies with Pong!")
-            .setDMPermission(true)
+            .setDMPermission(true),
     },
 ];
